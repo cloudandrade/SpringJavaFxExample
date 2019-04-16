@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.springexample.controller.EditarUsuarioController">
+   <children>
+      <Label layoutX="239.0" layoutY="27.0" text="Edit User" />
+      <Label layoutX="157.0" layoutY="161.0" text="Name:" />
+      <Label layoutX="157.0" layoutY="205.0" text="E-mail:" />
+      <Button fx:id="btnEdit" layoutX="239.0" layoutY="327.0" mnemonicParsing="false" onAction="#Edit" prefHeight="25.0" prefWidth="59.0" text="Edit" />
+      <TextField fx:id="txtName" layoutX="204.0" layoutY="157.0" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="txtEmail" layoutX="204.0" layoutY="201.0" prefHeight="25.0" prefWidth="212.0" />
+      <Label layoutX="110.0" layoutY="241.0" text="New Password:" />
+      <PasswordField fx:id="pswConfirmation" layoutX="203.0" layoutY="237.0" prefHeight="25.0" prefWidth="212.0" />
+      <Button fx:id="btnVoltar" layoutX="5.0" layoutY="2.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="25.0" prefWidth="53.0" text="Voltar" />
+      <PasswordField fx:id="pswConfirmation1" layoutX="203.0" layoutY="276.0" prefHeight="25.0" prefWidth="212.0" />
+      <Label layoutX="63.0" layoutY="280.0" text="Password Confirmation:" />
+   </children>
+</AnchorPane>

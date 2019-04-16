@@ -35,7 +35,7 @@ public class CrudExampleApplication extends Application{
 
 	@Override
 	public void start(Stage arg0) throws Exception {
-		System.out.println("programa iniciou");
+		
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(CrudExampleApplication.class);
 		context = builder.run(getParameters().getRaw().toArray(new String[0]));
 		
@@ -45,7 +45,7 @@ public class CrudExampleApplication extends Application{
 		AplicacaoUtil.getInstancia().setContext(context);
 		AplicacaoUtil.getInstancia().setTelaAtual(arg0);
 		AplicacaoUtil.getInstancia().irParaTela("UsuarioFXML.fxml");
-		System.out.println("programa findou");
+
 		
 	}
 
