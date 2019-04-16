@@ -70,20 +70,19 @@ public class UsuarioController implements Initializable{
 
 		    @FXML
 		    void EditUser(ActionEvent event) {
-//		    	bancoSelecionado = Tabela.getSelectionModel().getSelectedItem();
-//				if (bancoSelecionado == null) {
-//					Alert alert = new Alert(Alert.AlertType.INFORMATION);
-//					alert.setTitle("Informação");
-//					alert.setHeaderText(null);
-//					alert.setContentText("Nenhum Banco foi Selecionado!");
-//					alert.showAndWait();
-//				} else {
-//					BancoController.setSelecao(bancoSelecionado);
-//					BancoController.setTelaFechada(1);
-//					Stage stage = (Stage) btnFechar.getScene().getWindow(); // Obtendo a janela atual
-//					stage.close(); // Fechando o Stage
-//				}
-		    	AplicacaoUtil.getInstancia().irParaTela("EditarUsuarioFXML.fxml");
+		    	usuarioSelecionado = tbUser.getSelectionModel().getSelectedItem();
+				if (usuarioSelecionado == null) {
+					Alert alert = new Alert(Alert.AlertType.INFORMATION);
+					alert.setTitle("Informação");
+					alert.setHeaderText(null);
+					alert.setContentText("Nenhum Usuário foi Selecionado!");
+					alert.showAndWait();
+				} else {
+					
+					EditarUsuarioController.setSelecao(usuarioSelecionado);
+					AplicacaoUtil.getInstancia().irParaTela("EditarUsuarioFXML.fxml");
+				}
+		    	
 		    }
 
 		    @FXML
@@ -117,7 +116,7 @@ public class UsuarioController implements Initializable{
 		    @FXML
 			void clicouTabela(MouseEvent event) {
 				usuarioSelecionado = tbUser.getSelectionModel().getSelectedItem();
-				//CriarUsuarioController.setSelecao(usuarioSelecionado);
+				//EditarUsuarioController.setSelecao(usuarioSelecionado);
 				//CriarUsuarioController.setTelaFechada(1);
 				//Stage stage = (Stage) btnFechar.getScene().getWindow(); // Obtendo a janela atual
 				//stage.close(); // Fechando o Stage

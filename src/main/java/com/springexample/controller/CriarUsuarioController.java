@@ -59,15 +59,53 @@ public class CriarUsuarioController implements Initializable{
     	user.setNome(txtName.getText());
     	user.setEmail(txtEmail.getText());
     	user.setSenha(pswPass.getText());
-    	usuarioService.salvar(user);
+    	if(txtName.getText().equals("")) {
+    		
+    		txtName.setStyle("-fx-text-box-border:red;");
+    		txtName.setPromptText("Insira o seu Nome");
+	
+    	}else if(txtEmail.getText().equals("")) {
     	
-    	Alert alert = new Alert(Alert.AlertType.INFORMATION);
-		alert.setTitle("Informação");
-		alert.setHeaderText(null);
-		alert.setContentText("Novo Usuário Criado");
-		alert.showAndWait();
+    		txtEmail.setStyle("-fx-text-box-border:red;");
+    		txtEmail.setPromptText("Insira o seu Email");
     	
-		AplicacaoUtil.getInstancia().irParaTela("UsuarioFXML.fxml");
+    	}else if(!pswPass.getText().equals(pswConfirmation.getText())) {
+    	
+    		pswPass.clear();
+    		pswConfirmation.clear();
+    		pswPass.setStyle("-fx-text-box-border:red;");
+    		pswPass.setPromptText("Senhas não conferem");
+    
+    	
+    	}else {
+    		
+    		
+
+        	try {
+        		usuarioService.salvar(user);
+            	Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        		alert.setTitle("Informação");
+        		alert.setHeaderText(null);
+        		alert.setContentText("Novo Usuário Criado");
+        		alert.showAndWait();
+            	
+        		AplicacaoUtil.getInstancia().irParaTela("UsuarioFXML.fxml");
+        		
+    		} catch (Exception e) {
+    			Alert alert = new Alert(Alert.AlertType.ERROR);
+    			alert.setTitle("Erro!");
+        		alert.setHeaderText(null);
+        		alert.setContentText("Não Foi Possível criar um novo usuário!");
+        		alert.showAndWait();
+        		e.printStackTrace();
+    		}
+    		
+    		
+    	}
+    	
+    	
+    	
+    	
     }
 
     
