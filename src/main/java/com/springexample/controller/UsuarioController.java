@@ -56,6 +56,9 @@ public class UsuarioController implements Initializable{
 
 	    private static Usuario usuarioSelecionado;
 	    
+	    @FXML
+	    private Button exit;
+	    
 		@Override
 		public void initialize(URL arg0, ResourceBundle arg1) {
 			//initListeners();
@@ -131,14 +134,12 @@ public class UsuarioController implements Initializable{
 				tbUser.setItems(listaUsuarios());
 			}
 
-		    public void initListeners() {
-		    	
-		    	
-		    	
-		    	
-		    	
+		    
+		    @FXML
+		    void toexit(ActionEvent event) {
+		    	System.exit(0);
 		    }
-
+		    
 			private ObservableList<Usuario> listaUsuarios() {
 				return FXCollections.observableArrayList(usuarioService.buscarTodos());
 			}

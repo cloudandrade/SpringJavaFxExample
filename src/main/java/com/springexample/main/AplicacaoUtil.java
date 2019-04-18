@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class AplicacaoUtil {	
 
@@ -35,12 +36,12 @@ public class AplicacaoUtil {
 			loader.setControllerFactory(context::getBean);
 			Parent root = loader.load();
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(null);
 			scene.getStylesheets().clear();
-			scene.getStylesheets().add("stylesheet2.css");
+			scene.getStylesheets().add("style.css");
 			telaAtual.setScene(scene);
 			telaAtual.setResizable(false);
 			telaAtual.centerOnScreen();
+			telaAtual.initStyle(StageStyle.UNDECORATED);
 			if (!telaAtual.isShowing()) {
 				telaAtual.show();
 			}

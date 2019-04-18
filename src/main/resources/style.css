@@ -1,0 +1,57 @@
+
+
+.panel{
+ -fx-background-color: #6495ED;
+}
+
+.labels{
+    -fx-text-fill: white;
+
+}
+
+.textfilds{
+    -fx-background-color: rgb(84, 116, 175);
+    -fx-background-radius: 5px;
+    -fx-border-color: black;
+    -fx-border-size: 5px;
+    -fx-border-radius: 5px;
+    -fx-text-fill:black;
+}
+
+
+.btnsearch{
+    -fx-background-color: #81DAF5;
+    -fx-background-radius: 5px;
+    -fx-border-color: black;
+    -fx-border-size: 5px;
+    -fx-border-radius: 5px;
+}
+
+
+
+.btncreate{
+-fx-background-color: #32CD32;
+-fx-background-radius: 5px;
+-fx-border-color: black;
+-fx-border-size: 5px;
+-fx-border-radius: 5px;
+-fx-text-fill:black;
+}
+
+.btndelete{
+-fx-background-color: #FF0000;
+-fx-background-radius: 5px;
+-fx-border-color: black;
+-fx-border-size: 5px;
+-fx-border-radius: 5px;
+-fx-text-fill:black;
+}
+
+.btnedit{
+-fx-background-color: #FFFF00;
+-fx-background-radius: 5px;
+-fx-border-color: black;
+-fx-border-size: 5px;
+-fx-border-radius: 5px;
+-fx-text-fill:black;
+}

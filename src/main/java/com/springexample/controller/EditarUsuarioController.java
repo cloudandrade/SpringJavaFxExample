@@ -10,7 +10,10 @@ import com.springexample.main.AplicacaoUtil;
 import com.springexample.model.Usuario;
 import com.springexample.service.UsuarioService;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -81,14 +84,33 @@ public class EditarUsuarioController implements Initializable {
 		txtName.setText(usuarioSelecionado.getNome());
 		txtEmail.setText(usuarioSelecionado.getEmail());
 		pswConfirmation.setText(usuarioSelecionado.getSenha());
+		pswConfirmation1.setDisable(true);
 		
+		
+		initListeners();
 	}
 	
 	public static void setSelecao(Usuario usuario) {
 		usuarioSelecionado = usuario;
 	}
 
-	
+	public void initListeners() {
+		
+		pswConfirmation.focusedProperty().addListener(new ChangeListener<Boolean>() {
 
+			@Override
+			public void changed(ObservableValue<? extends Boolean> arg0, Boolean arg1, Boolean arg2) {
+				
+				pswConfirmation1.setDisable(false);
+			}
+
+		});
+
+	
+		
+		
+	}
+
+	
 }
 

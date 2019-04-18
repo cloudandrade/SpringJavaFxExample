@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.springexample.controller.UsuarioController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="600.0" style="-fx-background-color: #6495ED;" styleClass="panel" stylesheets="@../../../../resources/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.springexample.controller.UsuarioController">
    <children>
-      <Button fx:id="btnCreate" layoutX="352.0" layoutY="108.0" mnemonicParsing="false" onAction="#CreateUser" text="Create User" />
-      <Button fx:id="btnEdit" layoutX="436.0" layoutY="108.0" mnemonicParsing="false" onAction="#EditUser" text="Edit User" />
-      <Button fx:id="btnDelete" layoutX="507.0" layoutY="108.0" mnemonicParsing="false" onAction="#DeleteUser" text="Delete User" />
-      <TableView fx:id="tbUser" layoutX="16.0" layoutY="145.0" prefHeight="359.0" prefWidth="569.0">
+      <Button fx:id="btnCreate" layoutX="352.0" layoutY="108.0" mnemonicParsing="false" onAction="#CreateUser" styleClass="btncreate" stylesheets="@../../../../resources/style.css" text="Create User" />
+      <Button fx:id="btnEdit" layoutX="435.0" layoutY="108.0" mnemonicParsing="false" onAction="#EditUser" styleClass="btnedit" stylesheets="@../../../../resources/style.css" text="Edit User" />
+      <Button fx:id="btnDelete" layoutX="507.0" layoutY="108.0" mnemonicParsing="false" onAction="#DeleteUser" styleClass="btndelete" stylesheets="@../../../../resources/style.css" text="Delete User" />
+      <TableView fx:id="tbUser" layoutX="16.0" layoutY="145.0" opacity="0.73" prefHeight="359.0" prefWidth="569.0" styleClass="panel" stylesheets="@../../../../resources/style.css">
         <columns>
           <TableColumn fx:id="tbcId" prefWidth="41.0" text="Id" />
           <TableColumn fx:id="tbcNome" prefWidth="295.0" text="Name" />
             <TableColumn fx:id="tbcEmail" prefWidth="230.0" text="E-mail" />
         </columns>
       </TableView>
-      <TextField fx:id="txtSearch" layoutX="16.0" layoutY="108.0" prefHeight="25.0" prefWidth="285.0" promptText="Search Users..." />
-      <Button fx:id="btnSearch" layoutX="309.0" layoutY="108.0" mnemonicParsing="false" onAction="#Pesquisar" text="OK" />
-      <Label layoutX="151.0" layoutY="14.0" text="Desktop Application Crud Example ">
+      <TextField fx:id="txtSearch" layoutX="16.0" layoutY="108.0" prefHeight="25.0" prefWidth="285.0" promptText="Search Users..." styleClass="textfilds" stylesheets="@../../../../resources/style.css">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Button fx:id="btnSearch" layoutX="309.0" layoutY="108.0" mnemonicParsing="false" onAction="#Pesquisar" styleClass="btnsearch" stylesheets="@../../../../resources/style.css" text="OK" />
+      <Label layoutX="151.0" layoutY="14.0" styleClass="labels" text="Desktop Application Crud Example " textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="19.0" />
          </font>
       </Label>
-      <Label layoutX="277.0" layoutY="40.0" text="By Cloud" />
+      <Label layoutX="277.0" layoutY="40.0" styleClass="labels" text="By Cloud" />
+      <Button fx:id="exit" layoutX="549.0" layoutY="12.0" mnemonicParsing="false" onAction="#toexit" prefHeight="28.0" prefWidth="38.0" text="Exit" />
    </children>
 </AnchorPane>

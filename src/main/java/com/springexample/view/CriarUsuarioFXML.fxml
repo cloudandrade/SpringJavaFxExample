@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.springexample.controller.CriarUsuarioController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="526.0" styleClass="panel" stylesheets="@../../../../resources/css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.springexample.controller.CriarUsuarioController">
    <children>
-      <Label layoutX="241.0" layoutY="35.0" text="Create User" />
-      <Label layoutX="144.0" layoutY="157.0" text="Name:" />
-      <Label layoutX="144.0" layoutY="201.0" text="E-mail:" />
-      <Label layoutX="127.0" layoutY="243.0" text="Password:" />
-      <Button fx:id="btnCreate" layoutX="246.0" layoutY="328.0" mnemonicParsing="false" onAction="#Create" text="Create" />
-      <TextField fx:id="txtName" layoutX="191.0" layoutY="153.0" prefHeight="25.0" prefWidth="212.0" />
-      <TextField fx:id="txtEmail" layoutX="191.0" layoutY="197.0" prefHeight="25.0" prefWidth="212.0" />
-      <Label layoutX="54.0" layoutY="281.0" text="Password Confirmation:" />
-      <PasswordField fx:id="pswPass" layoutX="191.0" layoutY="239.0" prefHeight="25.0" prefWidth="212.0" />
-      <PasswordField fx:id="pswConfirmation" layoutX="191.0" layoutY="277.0" prefHeight="25.0" prefWidth="212.0" />
-      <Button fx:id="btnVoltar" layoutX="5.0" layoutY="2.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="25.0" prefWidth="53.0" text="Voltar" />
+      <Label layoutX="209.0" layoutY="21.0" styleClass="labels" stylesheets="@../../../../resources/css/style.css" text="Create User">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="174.0" layoutY="100.0" text="Name:" />
+      <Label layoutX="174.0" layoutY="149.0" text="E-mail:" />
+      <Label layoutX="171.0" layoutY="200.0" text="Password:" />
+      <Button fx:id="btnCreate" layoutX="214.0" layoutY="328.0" mnemonicParsing="false" onAction="#Create" prefHeight="34.0" prefWidth="125.0" styleClass="btncreate" stylesheets="@../../../../resources/css/style.css" text="Create" />
+      <TextField fx:id="txtName" layoutX="171.0" layoutY="117.0" prefHeight="25.0" prefWidth="212.0" styleClass="textfilds" stylesheets="@../../../../resources/css/style.css" />
+      <TextField fx:id="txtEmail" layoutX="171.0" layoutY="166.0" prefHeight="25.0" prefWidth="212.0" styleClass="textfilds" stylesheets="@../../../../resources/css/style.css" />
+      <Label layoutX="171.0" layoutY="251.0" text="Password Confirmation:" />
+      <PasswordField fx:id="pswPass" layoutX="171.0" layoutY="217.0" prefHeight="25.0" prefWidth="212.0" styleClass="textfilds" stylesheets="@../../../../resources/css/style.css" />
+      <PasswordField fx:id="pswConfirmation" layoutX="171.0" layoutY="268.0" prefHeight="25.0" prefWidth="212.0" styleClass="textfilds" stylesheets="@../../../../resources/css/style.css" />
+      <Button fx:id="btnVoltar" layoutX="5.0" layoutY="2.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="25.0" prefWidth="53.0" styleClass="btnsearch" stylesheets="@../../../../resources/css/style.css" text="Voltar" />
    </children>
 </AnchorPane>

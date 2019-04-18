@@ -1,0 +1,29 @@
+[33mcommit f2a76910ba472153130e601b8cceab64953f0afa[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Jan Andrade <cloud.andrade16@gmail.com>
+Date:   Tue Apr 16 00:34:00 2019 -0300
+
+    Editar usuário funcionando + Validação de campos criar usuário parte 1
+
+[33mcommit e2b69ea31daace5fa23f7f8a4fb7c6c188365af7[m
+Author: Jan Cloud Andrade <37068857+cloudandrade@users.noreply.github.com>
+Date:   Mon Apr 15 23:21:23 2019 -0300
+
+    update Readme.md
+
+[33mcommit 6a367b339bcb2c19cfcd3c1c94a241c4432d0200[m
+Author: Jan Andrade <cloud.andrade16@gmail.com>
+Date:   Mon Apr 15 22:58:58 2019 -0300
+
+    Criadas funções da tabela, cadastrar usuario, deletar usuario
+
+[33mcommit c91dd16c53916a80a4224f27acb0cce01df5415b[m
+Author: Jan Cloud Andrade <37068857+cloudandrade@users.noreply.github.com>
+Date:   Mon Apr 15 01:16:43 2019 -0300
+
+    Create README.md
+
+[33mcommit bf8261615030d07feda5b8a89aa3567afaa939b5[m
+Author: Jan Andrade <cloud.andrade16@gmail.com>
+Date:   Mon Apr 15 01:14:05 2019 -0300
+
+    Start Project - Build structure MVC + JPA + HIBERNATE + JAVAFX initial screen, and configurations
